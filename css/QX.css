@@ -1,7 +1,9 @@
+/*General Structure*/
 html, body {
     height: 100%;
     min-width: 640px;
-    min-height: 450px;
+    min-height: 50px;
+    margin: 0;
 }
 body {
     font: 14px/1 Tahoma,STHeiti,"Microsoft YaHei",Helvetica,Verdana,sans-serif;
@@ -10,3 +12,242 @@ body {
     background: #222;
     overflow: hidden;
 }
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#left {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    top: 50px;
+    bottom: 50px;
+   }
+
+section {
+    position: absolute;
+    top: 50px;
+    bottom: 60px;
+    left: 100px;
+    right: 100px;
+    }
+
+#right {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    top: 50px;
+    bottom: 50px;
+
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+/*Head*/
+.music {
+    position: fixed;
+    z-index: 4;
+    right: 20px;
+    top: 20px;
+    
+}
+.play{
+	animation: side 4s linear infinite;
+}
+@keyframes side{	
+	0%{ transform:rotate(0)}
+	100%{ transform:rotate(360deg)}
+}
+h1 {
+    margin: 0;
+    position: fixed;
+    left: 40px;
+    top: 20px;
+    height: 30px;
+    z-index: 1;
+}
+
+
+
+/*Background images*/
+#background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+#background>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#background>div:nth-of-type(1) {
+    background: url(../images/bg01.jpg);
+    background-size: 100% 100%;
+}
+
+#background>div:nth-of-type(2) {
+    background: url(../images/bg02.jpg);
+    background-size: 100% 100%;
+}
+#background>div:nth-of-type(3) {
+    background: url(../images/bg03.jpg);
+    background-size: 100% 100%;
+}
+#background>div:nth-of-type(4) {
+    background: url(../images/bg04.jpg);
+    background-size: 100% 100%;
+}
+#background>div:nth-of-type(5) {
+    background: url(../images/bg05.jpg);
+    background-size: 100% 100%;
+}
+#background>div:nth-of-type(6) {
+    background: url(../images/bg06.jpg);
+    background-size: 100% 100%;
+}
+#background>div:nth-of-type(7) {
+    background: url(../images/bg07.jpg);
+    background-size: 100% 100%;
+}
+.Off{
+    display: none;
+}
+
+/**Middle Context**/
+.doc{
+    text-align: center;
+    position: absolute;
+}
+
+.doc p{
+    width: 340px;
+    margin: 0px auto;
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+    margin-top: 8px;
+    /* opacity:0.2;  
+    transform:scale(0.1);
+    z-index: 2; */
+}
+.doc .logo span {
+    transition: all 2s;
+    display: inline-block;
+}
+.logo span:nth-of-type(1){
+    background:url('../images/logo-text.png') no-repeat left center;
+    display:inline-block;
+    height: 50px;
+    padding-right: 14px;
+}
+.doc h4{	
+	position: absolute;
+    left:0px;
+    top:50px;
+	/* bottom:410px; */
+	width:100%;
+	height: 140px;
+	text-align: center;
+	z-index:1;
+}
+.doc .logo{
+    position: absolute;
+    text-align: center;
+    top:260px;
+    width: 100%
+
+}
+/* .doc h4,h6{	
+	position: absolute;
+	left:0px;
+	bottom:410px;
+	width:100%;
+	height: 140px;
+	text-align: center;
+	z-index:1;
+} */
+.no{
+    display: none;
+}
+
+/*screen1*/
+
+.screen1 h4{
+    animation: move 10s linear  infinite ;
+}
+@keyframes move{	
+	0%{ transform:translate(0px,0px)}
+	50%{ transform:translate(0px,30px)}
+	100%{ transform:translate(0px,0px)}
+}
+
+
+/*download*/
+.download{	
+	position: absolute;
+	left: 0px;
+	top:360px;
+	height: 85px;
+	width:100%;
+	z-index:2;
+	text-align: center;
+}
+
+
+
+/*nav*/
+.nav {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6)
+
+}
+.nav ul {
+	width: 1000px;
+	margin: 0 auto;
+    overflow: hidden;
+    list-style: none;
+}
+.nav ul li {
+	float: left;
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.nav a{
+    display: block;
+    width: 200px;
+    height: 60px;
+    transition: background 0.8s;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.nav a.one:hover{background: #228bd6;}
+.nav a.two:hover{background: #c33;}
+.nav a.three:hover{background: #3aa624;}
+.nav a.four:hover{background: #c145cc;}
+.nav a.five:hover{background: #f2ca00;}
