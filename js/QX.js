@@ -23,8 +23,6 @@ $(function () {
             $('.right-nav li').eq(num).addClass('current').siblings().removeClass();
             $('.doc').stop().animate({ top: -num * 100 + '%' }, 500);
             $('.doc>div').eq(num).removeClass('no').siblings().addClass('no');
-            $('#background').stop().animate({ top: -num * 0 + '%' }, 500);
-
             
         }, 300)
 
