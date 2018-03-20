@@ -116,15 +116,24 @@ header ul li {
 	background: #fff;
 }
 
-/* list_score */
+/*** list_score ***/
 .list_score {
 	background: #fff;
 	height: 320px;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
 }
+/* top */
 .list_score .top {
 	height: 36px;
 	padding: 30px 33px 0;
+}
+.list_score p {
+    float: left;
+    margin: 4px 10px 0 0;
+    /* font-size: 16px; */
+    line-height: 12px;
+    color: #425766;
 }
 .list_score .icon {
 	float: left;
@@ -132,4 +141,73 @@ header ul li {
 	height: 16px;
 	margin: 4px 10px 0 0;
 	background: url(../images/sprite1.png) no-repeat -254px -2117px;
+}
+.list_score>.top .score {
+	float: left;
+	position: relative;
+	height: 22px;
+	padding: 0 10px;
+}
+.score img:nth-of-type(1) {
+	position: absolute;
+	bottom: -14px;
+	height: 20px;
+}
+.score img:nth-of-type(2) {
+	position: relative;
+}
+.score img:nth-of-type(3) {
+	position: relative;
+}
+
+/* Circle */
+.list_score ul.circle {
+	position: relative;
+	height: 230px;
+	width: 802px;
+	margin: 0px auto
+}
+.list_score .circle li {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-right: 90px;
+	background: url(../images/circle.png) no-repeat
+}
+.list_score li:nth-of-type(3) {
+	margin-right: 0px;
+}
+.list_score .num {
+	position: absolute;
+	width: 200px;
+	font-size: 20px;
+	top: 80px;
+	text-align: center;
+}
+.list_score .num strong {
+	font-size: 40px;
+}
+.list_score .speed {
+	position: absolute;
+	bottom: 20px;
+	width: 200px;
+	text-align: center;
+	font-size: 12px;
+	color: #8596a2;
+}
+
+/* Recent */
+.online li {
+	float: left;
+	color: #425766;
+	padding: 0 30px;
+	font-size: 14px;
+	height: 30px;
+	cursor: pointer
+}
+.online .current {
+	border-bottom: 2px solid #88b7ee;
+	color: #88b7ee;
+	font-weight: bold;
 }
