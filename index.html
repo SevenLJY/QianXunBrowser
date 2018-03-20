@@ -8,20 +8,14 @@
     <title>MyQX</title>
 
     <link type="text/css" rel="stylesheet" href="css/QX.css">
+    <script src="js/jquery-1.11.1.js"></script>
     <script src="js/QX.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
 </head>
 
 <body>
     <audio src="music/Bandari - 满天星 - 班得瑞.mp3" autoplay=""></audio>
-    <div id="background">
-        <div class="b1 "></div>
-        <div class="b2 Off"></div>
-        <div class="b3 Off"></div>
-        <div class="b4 Off"></div>
-        <div class="b5 Off"></div>
-        <div class="b6 Off"></div>
-        <div class="b7 Off"></div>
-    </div>
+
     <header>
         <span class="music play">
             <img src="images/music.png" alt="" width="40px">
@@ -30,9 +24,9 @@
             <img src="images/logo01.png" alt="">
         </h1>
     </header>
-    <div id="left"></div>
+  
     <section class="doc">
-        <div class="screen1">
+        <div class="screen1 no">
             <h4>
                 <img src="images/balloon.png" alt="" width="120px">
             </h4>
@@ -178,16 +172,27 @@
             </div>
         </div>
 
-        <div class="download">
+        
+    </section>
+    <div class="download">
             <p>
                 <a href="#">
                     <img src="images/down.png" alt="">
                 </a>
             </p>
-        
+
         </div>
-    </section>
-    <div id="right"></div>
+    <div id="right">
+        <ol class="right-nav">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
     <footer class="nav">
         <ul>
             <li>
