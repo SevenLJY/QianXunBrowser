@@ -1,0 +1,135 @@
+* {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #425766
+}
+body {
+	background: #f6f8fa;
+	font-family: "微软雅黑";
+}
+/* header */
+header {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5)
+}
+header div {
+	width: 940px;
+	margin: 0 auto;
+}
+header h1 {
+	float: left;
+	height: 70px;
+}
+header h1 a {
+	display: block;
+	height: 70px;
+}
+header h1 span {
+	position: relative;
+	display: block;
+	top: 17px;
+	width: 242px;
+	height: 33px;
+	background: url(../images/sprite.png) no-repeat -28px 0px;
+}
+header ul {
+	float: left;
+	padding-left: 40px;
+}
+header ul li {
+	float: left;
+	width: 140px;
+	text-align: center;
+	height: 68px;
+	line-height: 68px;
+	font-size: 15px;
+	font-weight: 600;
+}
+.current {
+	border-bottom: 2px solid #ff4500;
+}
+.current a {
+	color: #ff4500;
+}
+
+/* Container */
+.container {
+	width: 940px;
+	margin: 0px auto;
+	padding-bottom: 60px;
+}
+/* row1 */
+.top {
+    height: 218px;
+    margin-bottom: 10px;
+}
+.user {
+	width: 180px;
+	height: 100%;
+	float: left;
+	background: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+}
+.user a {
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 68px;
+	display: inline-block;
+	width: 156px;
+	height: 70px;
+	line-height: 40px;
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+	background: url(../images/sprite1.png) no-repeat -118px -1637px;
+}
+.user p {
+	line-height: 20px;
+	color: #8596a2;
+	font-size: 12px;
+	width: 156px;
+	text-align: center;
+    margin-left: 12px;
+    margin-bottom: 40px; 
+}
+.user p span {
+	color: #ff4500
+}
+
+.banner {
+	overflow: hidden;
+	position: relative;
+    float: right;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+.banner {
+	width: 747px;
+	height: 218px;
+	background: #fff;
+}
+
+/* list_score */
+.list_score {
+	background: #fff;
+	height: 320px;
+	margin-bottom: 20px;
+}
+.list_score .top {
+	height: 36px;
+	padding: 30px 33px 0;
+}
+.list_score .icon {
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 4px 10px 0 0;
+	background: url(../images/sprite1.png) no-repeat -254px -2117px;
+}

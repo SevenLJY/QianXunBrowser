@@ -329,7 +329,6 @@ h4,h6{
 	border-radius: 50%;
 	margin-top: 10px;
 	cursor: pointer;
-	/* animation: navturn 6s linear infinite; */
 }
 .right-nav .current {
 	width: 40px;
@@ -354,21 +353,23 @@ h4,h6{
 
 }
 .nav ul {
-	width: 1000px;
+	padding: 0 ;
+	width: 70%;
+	height: 60px;
 	margin: 0 auto;
-    overflow: hidden;
     list-style: none;
 }
 .nav ul li {
 	float: left;
-	width: 200px;
+	width: 20%;
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
+	margin: 0 auto;
 }
 .nav a{
     display: block;
-    width: 200px;
+    width: 100%;
     height: 60px;
     transition: background 0.8s;
     font-size: 14px;
