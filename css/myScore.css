@@ -211,3 +211,34 @@ header ul li {
 	color: #88b7ee;
 	font-weight: bold;
 }
+/* Chart */
+.chart {
+	/* position: absolute; */
+    width: 650px;
+    height: 140px;
+    padding: 0 25px;
+    margin: auto;
+    border-bottom: 1px solid #e5e8ec;
+}
+.chart li {
+	float: left;
+	position: relative;
+	width: 65px;
+	height: 140px;
+}
+.chart .date {
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	width: 100%;
+	line-height: 1em;
+	font-size: 12px;
+	text-align: center;
+	color: #8596a2;
+}
+.recent ol:nth-of-type(2) {
+    display: none;
+}
+.recent ol:nth-of-type(3) {
+    display: none;
+}
