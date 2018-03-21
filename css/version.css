@@ -130,6 +130,7 @@ body {
     right: -19px;
 }
 
+/*Content*/
 .content {
     padding: 24px 30px;
     background: #1cadf0;
@@ -160,13 +161,7 @@ body {
     padding-right: 12px;
 }
 
-.left .box_icon {
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    top: -6px;
-    right: -19px;
-}
+
 
 .grayl .content {
     background: #e6e7eb;
