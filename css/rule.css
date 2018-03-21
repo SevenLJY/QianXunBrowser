@@ -1,0 +1,102 @@
+* {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #425766
+}
+body {
+	background: #f6f8fa;
+	font-family: "微软雅黑";
+}
+/* header */
+header {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5)
+}
+header div {
+	width: 940px;
+	margin: 0 auto;
+}
+header h1 {
+	float: left;
+	height: 70px;
+}
+header h1 a {
+	display: block;
+	height: 70px;
+}
+header h1 span {
+	position: relative;
+	display: block;
+	top: 17px;
+	width: 242px;
+	height: 33px;
+	background: url(../images/sprite.png) no-repeat -28px 0px;
+}
+header ul {
+	float: left;
+	padding-left: 40px;
+}
+header ul li {
+	float: left;
+	width: 140px;
+	text-align: center;
+	height: 68px;
+	line-height: 68px;
+	font-size: 15px;
+	font-weight: 600;
+}
+.current {
+	border-bottom: 2px solid #ff4500;
+}
+.current a {
+	color: #ff4500;
+}
+
+.container {
+	width: 940px;
+	margin: 42px auto
+}
+.container li {
+	margin-bottom: 40px;
+}
+.container h2 {
+	margin-bottom: 9px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.container p {
+	font-size: 14px;
+	color: #333;
+}
+table {
+	margin-top: 6px;
+	border: solid 1px #d6dbe2;
+	background: #eff3f6;
+	border-bottom: 0;
+	margin-bottom: 40px;
+}
+table thead th {
+	font-weight: 700;
+	background: #e4e7eb;
+	padding: 17px 0;
+	text-align: center;
+	border-bottom: solid 1px #d6dbe2;
+}
+table td {
+	font-size: 14px;
+	padding: 17px 0;
+	text-align: center;
+	border-bottom: solid 1px #d6dbe2;
+}
+.container .note {
+	font-size: 12px;
+	color: #aaabab;
+}

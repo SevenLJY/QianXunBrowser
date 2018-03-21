@@ -115,6 +115,27 @@ header ul li {
 	height: 218px;
 	background: #fff;
 }
+.banner ul{width: 4000px;height: 218px;position: relative;left: 0px;}
+.banner li{float: left;}
+.banner .left{position: absolute;width: 33px;
+    height: 64px;
+    position: absolute;
+    top: 77px;
+    z-index: 2;
+	left: 17px;
+	background: url(../images/sprite.png) no-repeat -237px -1869px;
+	cursor:pointer;
+}
+.banner .right{position: absolute;width: 33px;
+    height: 64px;
+    position: absolute;
+    top: 77px;
+    z-index: 2;
+	left: 700px;
+	cursor:pointer;
+	background: url(../images/sprite.png) no-repeat -237px -1936px;
+}
+
 
 /*** list_score ***/
 .list_score {

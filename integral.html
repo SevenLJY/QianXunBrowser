@@ -7,7 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Integral</title>
     <link rel="stylesheet" href="css/integral.css">
-    
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script>
+        $(function () {
+
+            $('.online li').click(function (event) {
+                var index = $(this).index();
+                $(this).addClass('current').siblings().removeClass('current');
+                $('.recent ol').eq(index).show().siblings('ol').hide();
+            });
+
+            var num = 1;
+
+            setInterval(rightRun(), 2000);
+
+
+            $('.banner .left').click(function (e) {
+                num--;
+                if (num < 1) {
+                    num = 4;
+                }
+                $('.banner ul').stop().animate({ left: -(num * 747) + 'px' });
+            });
+
+            function rightRun() {
+                $('.banner .right').click(function (e) {
+                    num++;
+                    // if (num > 4) {
+                    //     num = 1;
+                    // }
+                    // $('.banner ul').stop().animate({ left: -(num * 747) + 'px' });
+
+                    if (num > 4) {
+                        num = 1;
+                        $('.banner ul').css("left", '-0')
+
+                    }
+                    $('.banner ul').stop().animate({ left: -(num * 747) + 'px' });
+                });
+            }
+            rightRun();
+
+
+        })
+    </script>
+
 </head>
 
 <body>
@@ -43,34 +89,37 @@
             <div class="banner">
                 <span class="left"></span>
                 <span class="right"></span>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="images/banner01.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/banner02.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/banner03.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/banner04.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/banner01.png" alt="">
-                        </a>
-                    </li>
+                <div class="bannerContainer">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/banner01.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/banner02.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/banner03.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/banner04.jpg" alt="">
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">
+                                <img src="images/banner01.png" alt="">
+                            </a>
+                        </li> -->
 
-                </ul>
+                    </ul>
+                </div>
+
             </div>
         </div>
         <div class=" list list01">
