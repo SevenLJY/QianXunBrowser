@@ -231,7 +231,8 @@ h4,h6{
 
 /*screen2*/
 .screen2 h6{
-	bottom:385px;
+	/* bottom:385px; */
+	top: 7%;
 }
 .screen2  h6 img{
 	-o-animation: side 4s linear  infinite ;
